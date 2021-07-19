@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 
-export default function Header() {
+export default function Header(props) {
 	return (
 		<>
 			<div className="block sm:hidden bg-black text-white text-center text-lg py-2 uppercase font-bold">
 				Hospital<span className="text-green-700">System</span>
 			</div>
-			<div className="flex justify-between border mt-1 border-gray-500">
-				<div className="border-r border-gray-500 p-1 bg-gray-300">
+			<div className="flex justify-between border  border-gray-500">
+				<div
+					className="border-r border-gray-500 p-1 bg-gray-300"
+					onClick={props.sh}>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						className="h-6 w-6 m-1 "
